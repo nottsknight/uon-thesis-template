@@ -26,10 +26,9 @@
 
 % Bibliography
 \usepackage[style=iso-numeric,sorting=nyt]{biblatex}
-\addbibresource{chapters/literature-review.bib}
-\addbibresource{chapters/uncovering-work.bib}
-\addbibresource{chapters/development.bib}
-\addbibresource{chapters/workflow-workload.bib}
+\addbibresource{chapters/chapter01.bib}
+\addbibresource{chapters/chapter02.bib}
+% add other .bib files here in the same way
 
 % Code presentation
 \usepackage{listings}
@@ -56,11 +55,11 @@
 
     \vspace*{1cm}
     \Huge
-    \textbf{Factors influencing trust in a machine-assisted data extaction tool}
+    \textbf{MEDoT: My Excellent Doctoral Thesis}
 
     \vspace{0.5cm}
     \LARGE
-    by Ian A.~Knight, MSci
+    by A.~Researcher, MSci
 
     \vfill
     \Large
@@ -80,46 +79,22 @@
 
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
-Systematic reviews are an integral part of effective evidence-based medicine.
-They provide an effective way for medical practitioners to obtain access to
-the latest evidence regarding effective treatments without the need for them
-to personally read and digest the thousands of medical journal articles produced
-monthly. However, the production of systematic reviews is time-consuming and
-labour-intensive, and so there is great incentive to automate the process.
+The abstract text goes here.
 
-\chapter{Introduction}
-\subfile{chapters/introduction.tex}
+\chapter{First Chapter}
+\subfile{chapters/chapter01.tex}
 
-\chapter{Literature Review}
-\subfile{chapters/literature-review.tex}
+\chapter{Second Chapter}
+\subfile{chapters/chapter02.tex}
 
-\chapter{Approach and Methodology}
-\subfile{chapters/methodology.tex}
-
-\chapter{Uncovering the Work of Data Extraction}\label{ch:uncovering-work}
-\subfile{chapters/uncovering-work.tex}
-
-\chapter{Development of a Data Extraction Assistant}\label{ch:development}
-\subfile{chapters/development.tex}
-
-\chapter{Evaluating the Effects of a Trustworthy Data Assistant on Data Extraction Workflow}
-\subfile{chapters/workflow-workload.tex}
-
-\chapter{Discussion}
-\subfile{chapters/discussion.tex}
-
-\chapter{Conclusion}
-\subfile{chapters/conclusion.tex}
+% More chapters go in here...
 
 \printbibliography[title={References}]
 \addcontentsline{toc}{chapter}{References}
 
 \appendix
 
-\chapter{Cognitive Work Analysis Transcripts}
-\subfile{appendices/transcripts.tex}
-
-\chapter{Backend API and Schema}\label{apdx:api-schema}
-\subfile{appendices/api-schema.tex}
+\chapter{First Appendix}
+\subfile{appendices/appendix01.tex}
 
 \end{document}
