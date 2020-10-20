@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper,oneside]{report}
+
+% Font and language settings
+\usepackage{inconsolata}
+\usepackage{mathpazo}
+\usepackage{domitian}
+\let\oldstylenums\oldstyle{}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english=british]{csquotes}
+
+% Page layout
+\usepackage{graphicx}
+\graphicspath{{images/} {../images/}}
+\usepackage[a4paper,left=1.5in,top=1in,right=1in,bottom=1in]{geometry}
+\usepackage[hidelinks,pdflang=en-GB]{hyperref}
+\usepackage{pdflscape}
+\usepackage[nottoc]{tocbibind}
+\renewcommand{\baselinestretch}{1.5}
+
+% Table layout
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tabularx}
+
+% Bibliography
+\usepackage[style=iso-numeric,sorting=nyt]{biblatex}
+\addbibresource{chapters/literature-review.bib}
+\addbibresource{chapters/uncovering-work.bib}
+\addbibresource{chapters/development.bib}
+\addbibresource{chapters/workflow-workload.bib}
+
+% Code presentation
+\usepackage{listings}
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    frame=single
+}
+
+\usepackage{float}
+\newfloat{lstfloat}{htbp}{lop}
+\floatname{lstfloat}{Listing}
+\def\lstfloatautorefname{Listing}
+
+\usepackage{amsmath}
+
+\usepackage{dirtree}
+
+% Subfiles
+\usepackage{subfiles}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+
+    \vspace*{1cm}
+    \Huge
+    \textbf{Factors influencing trust in a machine-assisted data extaction tool}
+
+    \vspace{0.5cm}
+    \LARGE
+    by Ian A.~Knight, MSci
+
+    \vfill
+    \Large
+    Thesis submitted to the University of Nottingham \\
+    for the degree of Doctor of Philosophy, May 2021
+
+    \vspace*{10mm}
+    \includegraphics[width=60mm]{UoN_Primary_Logo_CMYK.jpg}
+\end{titlepage}
+
+\chapter*{Acknowledgements}
+\subfile{acknowledgements.tex}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+Systematic reviews are an integral part of effective evidence-based medicine.
+They provide an effective way for medical practitioners to obtain access to
+the latest evidence regarding effective treatments without the need for them
+to personally read and digest the thousands of medical journal articles produced
+monthly. However, the production of systematic reviews is time-consuming and
+labour-intensive, and so there is great incentive to automate the process.
+
+\chapter{Introduction}
+\subfile{chapters/introduction.tex}
+
+\chapter{Literature Review}
+\subfile{chapters/literature-review.tex}
+
+\chapter{Approach and Methodology}
+\subfile{chapters/methodology.tex}
+
+\chapter{Uncovering the Work of Data Extraction}\label{ch:uncovering-work}
+\subfile{chapters/uncovering-work.tex}
+
+\chapter{Development of a Data Extraction Assistant}\label{ch:development}
+\subfile{chapters/development.tex}
+
+\chapter{Evaluating the Effects of a Trustworthy Data Assistant on Data Extraction Workflow}
+\subfile{chapters/workflow-workload.tex}
+
+\chapter{Discussion}
+\subfile{chapters/discussion.tex}
+
+\chapter{Conclusion}
+\subfile{chapters/conclusion.tex}
+
+\printbibliography[title={References}]
+\addcontentsline{toc}{chapter}{References}
+
+\appendix
+
+\chapter{Cognitive Work Analysis Transcripts}
+\subfile{appendices/transcripts.tex}
+
+\chapter{Backend API and Schema}\label{apdx:api-schema}
+\subfile{appendices/api-schema.tex}
+
+\end{document}
