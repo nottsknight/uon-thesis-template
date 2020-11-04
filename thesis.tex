@@ -1,53 +1,10 @@
 \documentclass[11pt,a4paper,oneside]{report}
 
-% Font and language settings
-\usepackage{inconsolata}
-\usepackage{mathpazo}
-\usepackage{domitian}
-\let\oldstylenums\oldstyle{}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english=british]{csquotes}
+\usepackage{uon-thesis}
 
-% Page layout
-\usepackage{graphicx}
-\graphicspath{{images/} {../images/}}
-\usepackage[a4paper,left=1.5in,top=1in,right=1in,bottom=1in]{geometry}
-\usepackage[hidelinks,pdflang=en-GB]{hyperref}
-\usepackage{pdflscape}
-\usepackage[nottoc]{tocbibind}
-\renewcommand{\baselinestretch}{1.5}
-
-% Table layout
-\usepackage{booktabs}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{tabularx}
-
-% Bibliography
-\usepackage[style=iso-numeric,sorting=nyt]{biblatex}
 \addbibresource{chapters/chapter01.bib}
 \addbibresource{chapters/chapter02.bib}
 % add other .bib files here in the same way
-
-% Code presentation
-\usepackage{listings}
-\lstset{
-    basicstyle=\footnotesize\ttfamily,
-    frame=single
-}
-
-\usepackage{float}
-\newfloat{lstfloat}{htbp}{lop}
-\floatname{lstfloat}{Listing}
-\def\lstfloatautorefname{Listing}
-
-\usepackage{amsmath}
-
-\usepackage{dirtree}
-
-% Subfiles
-\usepackage{subfiles}
 
 \begin{document}
 \begin{titlepage}
