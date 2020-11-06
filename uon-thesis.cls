@@ -39,12 +39,12 @@
 
     \vspace{0.5cm}
     \LARGE
-    by \@author
+    by~\@author
 
     \vfill
     \Large
     Thesis submitted to the University of Nottingham \\
-    for the degree of Doctor of Philosophy, \@date
+    for the degree of Doctor of Philosophy,~\@date
 
     \vspace*{10mm}
     \includegraphics[width=60mm]{UoN_Primary_Logo_CMYK.jpg}
@@ -54,3 +54,7 @@
 \RequirePackage[a4paper,left=1.5in,top=1in,right=1in,bottom=1in]{geometry}
 \RequirePackage[hidelinks,pdflang=en-GB]{hyperref}
 \renewcommand{\baselinestretch}{1.5}
+
+\RequirePackage[style=iso-numeric,sorting=nyt]{biblatex}
+\RequirePackage{amsmath}
+\RequirePackage{subfiles}

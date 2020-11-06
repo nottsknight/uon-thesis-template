@@ -17,13 +17,7 @@
 % OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 % SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-\documentclass[11pt,a4paper,oneside]{report}
-
-% UON THESIS PACKAGE
-% This package provides a lot of other packages that should be useful
-% for pretty much any thesis. See the readme for a list of all the
-% packages included.
-\usepackage{uon-thesis}
+\documentclass{uon-thesis}
 
 % BIBLIOGRAPHY FILES
 % Here you should list every separate .bib file you are using.
@@ -31,26 +25,12 @@
 \addbibresource{chapters/chapter02.bib}
 % Add other .bib files here in the same way
 
+\title{MEDoT:~My Excellent Doctoral Thesis}
+\author{A.~Researcher, MSci}
+\date{December 2020}
+
 \begin{document}
-\begin{titlepage}
-    \centering
-
-    \vspace*{1cm}
-    \Huge
-    \textbf{MEDoT: My Excellent Doctoral Thesis}
-
-    \vspace{0.5cm}
-    \LARGE
-    by A.~Researcher, MSci
-
-    \vfill
-    \Large
-    Thesis submitted to the University of Nottingham \\
-    for the degree of Doctor of Philosophy, May 2021
-
-    \vspace*{10mm}
-    \includegraphics[width=60mm]{UoN_Primary_Logo_CMYK.jpg}
-\end{titlepage}
+\maketitle
 
 \chapter*{Acknowledgements}
 \subfile{acknowledgements.tex}
