@@ -20,15 +20,11 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{uon-thesis}[2020/11/04 Document class for UoN PhD theses]
 
-\RequirePackage{libertine}
-\RequirePackage{libertinust1math}
-\RequirePackage[T1]{fontenc}
-\RequirePackage[utf8]{inputenc}
-\RequirePackage{graphicx}
-\graphicspath{{images/} {../images/}}
-
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
+\ProcessOptions\relax
 \LoadClass[12pt,a4paper,oneside]{report}
 
+% Custom titlepage
 \renewcommand{\maketitle}{%
 \begin{titlepage}
     \centering
@@ -51,10 +47,40 @@
 \end{titlepage}
 }
 
+% Configure font and layout of the document
+\RequirePackage{inconsolata}
+\RequirePackage{libertine}
+\RequirePackage{libertinust1math}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
 \RequirePackage[a4paper,left=1.5in,top=1in,right=1in,bottom=1in]{geometry}
 \RequirePackage[hidelinks,pdflang=en-GB]{hyperref}
+\RequirePackage{pdflscape}
 \renewcommand{\baselinestretch}{1.5}
 
+% Configure support for graphics and tables
+\RequirePackage{graphicx}
+\graphicspath{{images/} {../images/}}
+\RequirePackage{booktabs}
+\RequirePackage{tabularx}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+
+% Create a new float for code listings
+\RequirePackage{listings}
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    frame=single
+}
+
+\RequirePackage{float}
+\newfloat{lstfloat}{htbp}{lop}
+\floatname{lstfloat}{Listing}
+\def\lstfloatautorefname{Listing}
+
+% Other packages
+\RequirePackage[english=british]{csquotes}
+\RequirePackage[nottoc]{tocbibind}
 \RequirePackage[style=iso-numeric,sorting=nyt]{biblatex}
 \RequirePackage{amsmath}
 \RequirePackage{subfiles}
