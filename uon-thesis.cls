@@ -48,8 +48,7 @@
 }
 
 % Configure font and layout of the document
-\RequirePackage{inconsolata}
-%\RequirePackage{zi4}
+\RequirePackage{zi4}
 \RequirePackage{libertine}
 \RequirePackage{libertinust1math}
 \RequirePackage{fancyvrb}
@@ -86,6 +85,5 @@
 \RequirePackage[english=british]{csquotes}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[style=iso-numeric,sorting=nyt]{biblatex}
-\RequirePackage{amsmath}
-%\RequirePackage{newtxmath}
+\RequirePackage{newtxmath}
 \RequirePackage{subfiles}
