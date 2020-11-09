@@ -5,13 +5,11 @@ Repo template for PhD theses at the University of Nottingham
 The `uon-thesis` package included at the start of the main template
 includes the following packages:
  * *Font and language settings*
-   * `inconsolata` for typewriter text
-   * `zi4` preferred by the ACM for typewriter text - based on `inconsolata` 
-   * `mathpazo` and `domitian` for regular text
+   * `libertine` to provide the Libertine and Biolinum fonts in both Type 1 and OTF styles
+   * `zi4` preferred by the ACM for typewriter text - based on `inconsolata`
    * `fontenc` and `inputenc` to ensure proper handling of encoded text
    * `csquotes` for proper formatting of quotations
    * `fancyvrb` for flexible handling of verbatim text
-   * `libertine` to provide the Libertine and Biolinum fonts in both Type 1 and OTF styles
  * *Graphical and layout settings*
    * `graphicx` to allow including images
    * `geometry` to set the page margins
@@ -28,7 +26,6 @@ includes the following packages:
  * *Bibliography packages*
    * `biblatex` allows for more flexible presentation and organisation of bibliographies
  * *Miscellaneous packages*
-   * `amsmath` to provide a wide range of mathematical symbols
    * `newtxmath` preferred by the ACM to provide a full fledged set of math symbols 
    * `subfiles` to allow individual chapters, etc. to be built as separate documents or included in the main document
 

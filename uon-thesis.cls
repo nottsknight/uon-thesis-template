@@ -48,9 +48,10 @@
 }
 
 % Configure font and layout of the document
-\RequirePackage{inconsolata}
+\RequirePackage{zi4}
 \RequirePackage{libertine}
 \RequirePackage{libertinust1math}
+\RequirePackage{fancyvrb}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[a4paper,left=1.5in,top=1in,right=1in,bottom=1in]{geometry}
@@ -63,8 +64,10 @@
 \graphicspath{{images/} {../images/}}
 \RequirePackage{booktabs}
 \RequirePackage{tabularx}
+\RequirePackage{longtable}
 \RequirePackage{caption}
 \RequirePackage{subcaption}
+\RequirePackage{hypdoc}
 
 % Create a new float for code listings
 \RequirePackage{listings}
@@ -82,5 +85,5 @@
 \RequirePackage[english=british]{csquotes}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[style=iso-numeric,sorting=nyt]{biblatex}
-\RequirePackage{amsmath}
+\RequirePackage{newtxmath}
 \RequirePackage{subfiles}
