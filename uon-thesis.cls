@@ -50,12 +50,11 @@
 % Configure font and layout of the document
 \RequirePackage{zi4}
 \RequirePackage{libertine}
-\RequirePackage{libertinust1math}
+\RequirePackage{newtxmath}
 \RequirePackage{fancyvrb}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[a4paper,left=1.5in,top=1in,right=1in,bottom=1in]{geometry}
-\RequirePackage[hidelinks,pdflang=en-GB]{hyperref}
 \RequirePackage{pdflscape}
 \renewcommand{\baselinestretch}{1.5}
 
@@ -85,5 +84,4 @@
 \RequirePackage[english=british]{csquotes}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[style=iso-numeric,sorting=nyt]{biblatex}
-\RequirePackage{newtxmath}
 \RequirePackage{subfiles}
