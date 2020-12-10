@@ -25,7 +25,8 @@
 \LoadClass[12pt,a4paper,oneside]{report}
 
 % Custom titlepage
-\renewcommand{\maketitle}{%
+\makeatletter
+\def\@maketitle{%
 \begin{titlepage}
     \centering
 
@@ -46,6 +47,7 @@
     \includegraphics[width=60mm]{UoN_Primary_Logo_CMYK.jpg}
 \end{titlepage}
 }
+\makeatother
 
 % Configure font and layout of the document
 \RequirePackage{zi4}
